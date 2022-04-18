@@ -1,0 +1,33 @@
+.game-p {
+
+  position:relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #5b71de;
+  overflow: hidden;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    min-height: 550px;
+    padding: 40px 50px;
+    background: #2595bf;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 7px 35px 0 rgba(0,0,0,.3);
+    padding: 0 20px;
+    margin: 0 0 40px 0;
+  }
+}

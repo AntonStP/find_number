@@ -1,0 +1,47 @@
+.game-field {
+
+  position: absolute;
+  left: 50%;
+  top: 175px;
+  transform: translate(-50%,0%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  &-enter {
+    transform: translate(300%,0%);
+  }
+  &-enter-active,
+  &-enter-done {
+    transform: translate(-50%,0%);
+    transition: transform .7s ease-in-out;
+  }
+  &-exit-active {
+    transform: translate(-300%,0%);
+    transition: transform .7s ease-in-out;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 66px;
+    background: pink;
+    margin: 0 0 20px 0;
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+    &:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,.3);
+    }
+    &-num {
+      font-size: 33px;
+      color: white
+    }
+  }
+
+}
